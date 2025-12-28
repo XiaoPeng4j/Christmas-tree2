@@ -1,0 +1,7 @@
+{
+  "name": "Ethereal Gesture Christmas Tree",
+  "description": "An interactive 3D Christmas tree built with Three.js and MediaPipe. Control the tree's state (Closed, Scattered, Focused) and flip photo memories using hand gestures.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
