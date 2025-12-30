@@ -5,6 +5,7 @@ import path from 'path'
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/Christmas-tree2/',
       server: {
         port: 3000,
         host: '0.0.0.0',
