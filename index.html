@@ -1,17 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethereal Gesture Christmas Tree</title>
+
+    <!-- Tailwind CDN（这个可以保留） -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=ZCOOL+KuaiLe&family=Fredoka:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- MediaPipe Hands -->
+
+    <!-- Google Fonts（可以保留） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=ZCOOL+KuaiLe&family=Fredoka:wght@400;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+      <!-- MediaPipe Hands -->
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+
+    <!-- 内联样式（暂时保留，不影响） -->
     <style>
         body {
             margin: 0;
@@ -27,7 +35,7 @@
             text-shadow: 0 0 10px rgba(255, 182, 193, 0.8), 0 0 20px rgba(255, 105, 180, 0.6);
         }
     </style>
-<script type="importmap">
+    <script type="importmap">
 {
   "imports": {
     "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
@@ -41,9 +49,12 @@
 }
 </script>
 <link rel="stylesheet" href="/index.css">
-</head>
-<body>
+  </head>
+
+  <body>
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
-</body>
+
+    <!-- ✅ 唯一正确的入口 -->
+    <script type="module" src="./src/index.tsx"></script>
+  </body>
 </html>
